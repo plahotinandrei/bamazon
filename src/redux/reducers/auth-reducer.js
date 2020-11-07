@@ -54,6 +54,12 @@ const authReducer = (state = initialState, action) => {
                     ...state.userName,
                     firstName: action.firstName,
                     lastName: action.lastName
+                },
+                loginForm: {
+                    ...state.loginForm,
+                    login: '',
+                    password: '',
+                    errors: []
                 }
             }
         case IS_AUTH:

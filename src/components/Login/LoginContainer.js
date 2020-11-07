@@ -5,7 +5,6 @@ import {updateLogin, updatePassword, sendForm} from '../../redux/reducers/auth-r
 import Login from './Login.js';
 
 const LoginContainer = (props) => {
-    console.log(props.isAuth);
     return (
         props.isAuth ? <Redirect to='/profile'/> : <Login {...props}/>
     )

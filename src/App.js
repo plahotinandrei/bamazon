@@ -5,6 +5,7 @@ import './main.css';
 import HeaderContainer from './components/Header/HeaderContainer.js'
 import BooksContainer from './components/Books/BooksContainer.js';
 import LoginContainer from './components/Login/LoginContainer.js';
+import ProfileContainer from './components/Profile/ProfileContainer.js';
 
 const App = (props) => {
     return (
@@ -34,7 +35,7 @@ const App = (props) => {
                     exact
                     render={() => {
                         return (
-                            <div>profile</div>
+                            <ProfileContainer/>
                         )
                     }}
                 />
