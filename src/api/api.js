@@ -14,12 +14,27 @@ const booksAPI = {
 const authAPI = {
     isAuth() {
         return new Promise((resolve, reject) => {
-            resolve({
-                isAuth: JSON.parse(localStorage.getItem('isAuth'))
-            })
+            const isAuth = JSON.parse(localStorage.getItem('isAuth'));
+            if(isAuth) {
+                resolve({
+                    resultCode: 0,
+                    data: {
+                        firstName: 'Андрей',
+                        lastName: 'Плахотин'
+                    }
+                });
+            }else {
+                resolve({
+                    resultCode: 1,
+                    data: {
+                        firstName: 'Андрей',
+                        lastName: 'Плахотин'
+                    }
+                });
+            }
         })
     },
-    ligin(login, password) {
+    login(login, password) {
         return new Promise((resolve, reject) => {
             if(login === 'admin' && password === 'password') {
                 localStorage.setItem('isAuth', true);
@@ -27,7 +42,8 @@ const authAPI = {
                     resultCode: 0,
                     messages: [],
                     data: {
-                        login: 'admin'
+                        firstName: 'Андрей',
+                        lastName: 'Плахотин'
                     }
                 });
             }else {

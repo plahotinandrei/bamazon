@@ -2,13 +2,14 @@ import React from 'react';
 import {Route, BrowserRouter, Switch} from 'react-router-dom';
 import 'reset-css';
 import './main.css';
-import Header from './components/Header/Header.js'
+import HeaderContainer from './components/Header/HeaderContainer.js'
 import BooksContainer from './components/Books/BooksContainer.js';
+import LoginContainer from './components/Login/LoginContainer.js';
 
 const App = (props) => {
     return (
         <BrowserRouter>
-            <Header/>
+            <HeaderContainer/>
             <Switch>
                 <Route 
                     path="/" 
@@ -42,7 +43,7 @@ const App = (props) => {
                     exact
                     render={() => {
                         return (
-                            <div>login</div>
+                            <LoginContainer/>
                         )
                     }}
                 />  
