@@ -1,3 +1,7 @@
 .item {
     margin-bottom: 10px;
 }
+
+.active {
+    background: green;
+}

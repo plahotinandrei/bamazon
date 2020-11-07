@@ -18,7 +18,7 @@ const Books = (props) => {
             <button
                 key={i}
                 onClick={() => {props.onChangedPage(i)}}
-                className={styles.btn} 
+                className={`${styles.btn} ${i == props.page ? styles.active : ''}`} 
             >
                 {i}
             </button>
@@ -27,7 +27,7 @@ const Books = (props) => {
 
 
     return (
-        <div>
+        <div className='container'>
             <ul className={styles.list}>
                 {books}
             </ul>

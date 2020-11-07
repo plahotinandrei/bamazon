@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 const Header = (props) => {
     return (
         <header>
-            <nav>
+            <nav className={styles.nav}>
                     <NavLink to='/' activeClassName={styles.active} exact>Main page</NavLink>
                     <NavLink to='/books' activeClassName={styles.active} exact>Books</NavLink>
                     <NavLink to='/profile' activeClassName={styles.active} exact>Profile</NavLink>
