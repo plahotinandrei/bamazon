@@ -1,0 +1,26 @@
+.profile {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.profile p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    outline: none;
+    margin: 0 5px;
+    border: 1px solid #3c4044;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    background:  #3c4044;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all ease-in-out .3s;
+}
+
+.btn:hover {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

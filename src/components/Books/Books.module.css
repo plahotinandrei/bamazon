@@ -1,7 +1,66 @@
+.content {
+    padding: 30px 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.card {
+    height: 100%;
+    background: #3c4044;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card p:first-child {
     margin-bottom: 10px;
 }
 
-.active {
-    background: green;
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    outline: none;
+    margin: 0 5px;
+    border: 1px solid #3c4044;
+    color: #3c4044;
+    font-size: 18px;
+    border-radius: 3px;
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.btn.active, .btn:hover {
+    background: #3c4044;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .item {
+        width: 33.33333%;
+    }
+}
+
+@media (max-width: 720px) {
+    .item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .item {
+        width: 100%;
+    }
 }

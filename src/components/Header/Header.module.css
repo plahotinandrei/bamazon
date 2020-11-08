@@ -1,13 +1,17 @@
 .nav {
     padding: 20px 0;
+    text-align: center;
+    background: #3c4044;
 }
 
 .nav a {
     color: #000;
     text-decoration: none;
     margin: 0 10px;
+    color: #fff;
+    font-size: 18px;
 }
 
 .nav a.active {
-    color: green;
+    color:#ffcc01;
 }

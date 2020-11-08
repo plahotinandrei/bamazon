@@ -5,8 +5,10 @@ const Books = (props) => {
     const books = props.books.map((book) => {
         return (
             <li key={book.title} className={styles.item}>
-                <p>{book.author}</p>
-                <p>{book.title}</p>
+                <div className={styles.card}>
+                    <p>Автор:<br/> {book.author}</p>
+                    <p>Название:<br/> {book.title}</p>
+                </div>
             </li>
         )
     });
@@ -27,11 +29,13 @@ const Books = (props) => {
 
 
     return (
-        <div className='container'>
+        <div className={`container ${styles.content}`}>
             <ul className={styles.list}>
                 {books}
             </ul>
-            {pageButtons}
+            <div className={styles.buttons}>
+                {pageButtons}
+            </div>
         </div>
         
     )

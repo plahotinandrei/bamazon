@@ -1,0 +1,39 @@
+.content {
+    padding: 30px 0;
+}
+
+.form {
+    width: 300px;
+    margin: 0 auto;
+    background: #3c4044;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.form input, .form button {
+    width: 100%;
+}
+
+.form input, .form button { 
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.form input {
+    margin-bottom: 15px;
+}
+
+.form button {
+    cursor: pointer;
+    background: #ffcc01;
+    color:  #3c4044;
+}
+
+.errors p {
+    margin-bottom: 15px;
+    color: #f00;
+    font-size: 14px;
+}

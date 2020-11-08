@@ -6,6 +6,7 @@ import HeaderContainer from './components/Header/HeaderContainer.js'
 import BooksContainer from './components/Books/BooksContainer.js';
 import LoginContainer from './components/Login/LoginContainer.js';
 import ProfileContainer from './components/Profile/ProfileContainer.js';
+import MainPage from './components/MainPage/MainPage.js';
 
 const App = (props) => {
     return (
@@ -17,7 +18,7 @@ const App = (props) => {
                     exact
                     render={() => {
                         return (
-                            <div>main</div>
+                            <MainPage/>
                         )
                     }}
                 />
