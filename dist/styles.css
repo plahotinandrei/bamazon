@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+body {
+	line-height: 1;
+}
+menu, ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1230px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+.nav__cbe92ba {
+    padding: 20px 0;
+    text-align: center;
+    background: #3c4044;
+}
+
+.nav__cbe92ba a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav__cbe92ba a.active__ce151de {
+    color:#ffcc01;
+}
+.content__0b11120 {
+    padding: 30px 0;
+}
+
+.list__b41a4ea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.item__18ac2ac {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.card__baf222c {
+    height: 100%;
+    background: #3c4044;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card__baf222c p:first-child {
+    margin-bottom: 10px;
+}
+
+.buttons__7d2d377 {
+    text-align: center;
+}
+
+.btn__738ff17 {
+    outline: none;
+    margin: 0 5px;
+    border: 1px solid #3c4044;
+    color: #3c4044;
+    font-size: 18px;
+    border-radius: 3px;
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.btn__738ff17.active__39064a8, .btn__738ff17:hover {
+    background: #3c4044;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .item__18ac2ac {
+        width: 33.33333%;
+    }
+}
+
+@media (max-width: 720px) {
+    .item__18ac2ac {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .item__18ac2ac {
+        width: 100%;
+    }
+}
+.content__7a68499 {
+    padding: 30px 0;
+}
+
+.form__c109170 {
+    width: 300px;
+    margin: 0 auto;
+    background: #3c4044;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.form__c109170 input, .form__c109170 button {
+    width: 100%;
+}
+
+.form__c109170 input, .form__c109170 button { 
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.form__c109170 input {
+    margin-bottom: 15px;
+}
+
+.form__c109170 button {
+    cursor: pointer;
+    background: #ffcc01;
+    color:  #3c4044;
+}
+
+.errors__f6c08e5 p {
+    margin-bottom: 15px;
+    color: #f00;
+    font-size: 14px;
+}
+.profile__7d44f45 {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.profile__7d44f45 p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.btn__83bb485 {
+    outline: none;
+    margin: 0 5px;
+    border: 1px solid #3c4044;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    background:  #3c4044;
+    cursor: pointer;
+    padding: 5px 10px;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+}
+
+.btn__83bb485:hover {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.content__23c9196 {
+    padding: 30px 0;
+}
+
+.title__2646307 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3c4044;
+    text-align: center;
+}
